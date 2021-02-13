@@ -1,0 +1,18 @@
+<div class = "contents">
+  <% @tweets.each do |tweet| %>
+    <div class = "contents_top">
+        <% if tweet.image.attached? %>
+          <%= image_tag tweet.image, class: 'contents_post' %>
+        <% else %>
+          <div class = 'contents_post'>
+          </div>
+        <% end %>
+        <p><span>タイトル：</span><%= link_to tweet.text, tweet_path(tweet.id) %></p>
+        <span class = "tweet_name">
+          <span>投稿者：</span><a href="/users/<%= tweet.user.id %>">
+            <%= tweet.user.nickname %>
+          </a>
+        </span>
+    </div>
+  <% end %>
+</div>

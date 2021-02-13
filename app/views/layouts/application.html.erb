@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Voicechan</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header class = "header">
+      <div class = "heading">
+        <h1 class = "title"><a href = "/">Voicechan</a></h1>
+      </div>
+        <div class="navbar">
+          <ul class="nav-lists">
+              <% if user_signed_in? %>
+                <li><%= link_to "#{current_user.nickname}さん", "/users/#{current_user.id}", class: "post_name" %></li>
+                <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "post" %></li>
+                <li><%= link_to "投稿する", new_tweet_path, class:"post" %></li>
+              <% else %>
+                <li><%= link_to "ログイン", new_user_session_path, class: "post" %></li>
+                <li><%= link_to "新規登録", new_user_registration_path, class: "post" %></li>
+              <% end %>
+              <%= form_with(url: search_tweets_path, local: true, method: :get, class: "search_main") do |form| %>
+                <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search_form" %>
+                <%= form.submit "検索", class: "search" %>
+              <% end %>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <%= yield %>
+    <footer>
+      <p>
+        Copyright Voicechan 2021.
+      </p>
+    </footer>
+  </body>
+</html>

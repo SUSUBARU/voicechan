@@ -1,0 +1,44 @@
+<div class="main">
+      <div class="contact_show">
+        <ul class="show-lists">
+          <h2 class="title">詳細ページ</h2>
+            <div class="image">
+              <% if @tweet.image.present? %>
+              <h3 class="title">IMAGE</h3>
+              <%= image_tag(@tweet.image, class: :contents_post ) %>
+              <% else %>
+              <h3 class="title">NO_IMAGE</h3>
+              <% end %>
+            </div>
+            <div class="introduce">
+              <li><span>タイトル(紹介文)：</span><%= link_to @tweet.text, tweet_path(@tweet.id) %></li>
+              <li><span>投稿者：</span><%= link_to @tweet.user.nickname, user_path(@tweet.user.id) %></li>
+              <li>ダウンロード</li>
+              <% if user_signed_in? && current_user.id == @tweet.user.id %>
+              <li><%= link_to '編集', edit_tweet_path(@tweet.id) %></li>
+              <li><%= link_to '削除', tweet_path(@tweet.id), method: :delete %></li>
+              <% end %>
+            </div>
+        </ul>
+      </div>
+      <div class="comment">
+        <% if user_signed_in? %>
+          <%= form_with(model: [@tweet, @comment], local: true) do |form| %>
+            <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
+            <%= form.submit "SEND" %>
+          <% end %>
+        <% else %>
+          <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p>
+          </strong>
+        <% end %>
+          <div class="comments">
+            <h4>＜コメント一覧＞</h4>
+            <% @comments.each do |comment| %>
+              <p>
+                <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
+                <%= comment.text %>
+              </p>
+            <% end %>
+          </div>
+      </div>
+</div>
