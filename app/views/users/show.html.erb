@@ -7,12 +7,13 @@
           <div class = 'contents_post'>
           </div>
         <% end %>
-        <p><span>タイトル：</span><%= link_to tweet.text, tweet_path(tweet.id) %></p>
+        <p><span>タイトル(紹介文)：</span><%= link_to tweet.text, tweet_path(tweet.id) %></p>
         <span class = "tweet_name">
           <span>投稿者：</span><a href="/users/<%= tweet.user.id %>">
             <%= tweet.user.nickname %>
           </a>
         </span>
+        <%= audio_tag tweet.audio_url, :controls => true if tweet.audio? %>
     </div>
   <% end %>
 </div>
