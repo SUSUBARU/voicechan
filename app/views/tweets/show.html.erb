@@ -15,8 +15,8 @@
               <li><span>投稿者：</span><%= link_to @tweet.user.nickname, user_path(@tweet.user.id) %></li>
               <li><%= audio_tag @tweet.audio_url, :controls => true if @tweet.audio? %></li>
               <% if user_signed_in? && current_user.id == @tweet.user.id %>
-              <li><%= link_to '編集', edit_tweet_path(@tweet.id) %></li>
-              <li><%= link_to '削除', tweet_path(@tweet.id), method: :delete %></li>
+              <li><%= link_to '編集', edit_tweet_path(@tweet.id), class: "post" %></li>
+              <li><%= link_to '削除', tweet_path(@tweet.id), method: :delete, class: "post" %></li>
               <% end %>
             </div>
         </ul>
