@@ -154,7 +154,7 @@ h4 {
   height: 550px;
   width: 400px;
   margin: 10px;
-  background-color: #696969
+  background-color: #a1a1a1
 }
 
 .contents_post {
@@ -168,7 +168,7 @@ p {
 }
 
 .tweet_name {
-  color: white;
+  color: black;
 }
 
 .name_form,
@@ -279,7 +279,7 @@ p {
   width: 450px;
   margin: 0;
   padding: 20px;
-  background-color: black;
+  background-color: #a0a0a0;
   align-items: center;
 }
 
@@ -288,6 +288,10 @@ p {
   padding: 0;
   color: #e4e4e4;
   align-items: center;
+}
+
+p{
+  color: black;
 }
 
 .dev_main {
