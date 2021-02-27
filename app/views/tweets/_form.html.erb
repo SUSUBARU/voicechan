@@ -1,6 +1,9 @@
 <%= form_with(model: tweet, local: true) do |form|%>
+  <h4>タイトル(紹介文)</h4>
   <%= form.text_area :text, class:"text_form", placeholder: "タイトル(紹介文)", rows: "10" %>
+  <h4>画像</h4>
   <%= form.file_field :image, class:"image_form", placeholder: "イメージ" %>
+  <h4>音声</h4>
   <%= form.file_field :audio, class:"audio_form", placeholder: "audio" %>
   <%= form.submit "SEND", class:"send" %>
 <% end %>
