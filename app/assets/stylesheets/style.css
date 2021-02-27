@@ -70,6 +70,13 @@ h2 {
   color: #030303
 }
 
+h4 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: #030303
+}
+
 .search_main{
   display: flex;
   justify-content: center;
@@ -272,7 +279,7 @@ p {
   width: 450px;
   margin: 0;
   padding: 20px;
-  background-color: #a0a0a0;
+  background-color: black;
   align-items: center;
 }
 
