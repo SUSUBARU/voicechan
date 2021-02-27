@@ -4,12 +4,21 @@ class TweetsController < ApplicationController
   def index
     @tweets = Tweet.includes(:user).order("created_at DESC")
   end
+
   def new
     @tweet = Tweet.new
   end
+
   def create
-    Tweet.create(tweet_params)
+    @tweet = Tweet.new(tweet_params)
+    if @tweet.valid?
+      @tweet.save
+      redirect_to root_path
+    else
+      render :new
+    end
   end
+
   def show
     @comment = Comment.new
     @comments = @tweet.comments.includes(:user)
@@ -17,10 +26,16 @@ class TweetsController < ApplicationController
 
   def destroy
     tweet = Tweet.find(params[:id])
-    tweet.destroy
+    if current_user.id == tweet.user.id 
+      tweet.destroy
+    else redirect_to root_path
+    end
   end
 
   def edit
+    if @tweet.user_id != current_user.id
+      redirect_to action: :index
+    end
   end
 
   def update
