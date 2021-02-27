@@ -149,7 +149,7 @@ yarnバージョン
 | ----------- | ---------- | ----------- |
 | text        | string     | null: false |
 | user_id     | references | null: false |
-| audio       | string     |             |
+|audio       | string     |         |
 
 ### Association
 
