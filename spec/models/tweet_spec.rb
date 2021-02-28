@@ -19,7 +19,7 @@ RSpec.describe Tweet, type: :model do
         @tweet.text = ""
         @tweet.valid?
         expect(@tweet.errors.full_messages).to include("Text can't be blank")
-      end     
+      end
       it "ユーザーが紐付いていないとツイートは保存できない" do
         @tweet.user = nil
         @tweet.valid?
