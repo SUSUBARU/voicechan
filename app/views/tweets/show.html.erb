@@ -3,12 +3,12 @@
         <ul class="show-lists">
           <h2 class="title">詳細ページ</h2>
             <div class="image">
-              <%# if @tweet.image.present? %>
+              <% if @tweet.image.present? %>
               <h3 class="title">IMAGE</h3>
-              <%#= image_tag(@tweet.image, class: :contents_post ) %>
-              <%# else %>
+              <%= image_tag(@tweet.image, class: :contents_post ) %>
+              <% else %>
               <h3 class="title">NO_IMAGE</h3>
-              <%# end %>
+              <% end %>
             </div>
             <div class="introduce">
               <li><span>タイトル(紹介文)：</span><%= link_to @tweet.text, tweet_path(@tweet.id) %></li>
