@@ -100,21 +100,22 @@ WebブラウザGoogle Chromeの最新版を利用してアクセスしてくだ�
 ツイートを検索できます。
 
 # 実装した機能についてのGIFと説明
+
 ユーザーを登録すると音声と画像を投稿できるようになります。
-https://gyazo.com/7e8caf5f920e51f32ca7ee389ad7143d
-
+https://gyazo.com/04fd5b09e62d2d38151fa90b1341b1d4
+ 
 自身が投稿した商品は、編集と削除をすることができます。
-https://gyazo.com/2cfe56ae13d2e98dda048a7c1d5344dd
-https://gyazo.com/803b384b46e542519f59e5a6705dc1ae
-
+https://gyazo.com/22daa7086566ae55ebb19fbfbe611069
+https://gyazo.com/ec124688d58ada6d84ade9c69f719e78
+ 
 他のユーザーが投稿した画像は、ログインしていなくても閲覧することができます。
-https://gyazo.com/47f33dfd7183afe74deba820975d8d1f
-
+https://gyazo.com/d4f21ab7aa7727b093290ee7d5fa96e9
+ 
 詳細ページにアクセスすれば、ログインしているユーザーがコメントを送信することができます。
-https://gyazo.com/1b054e774f64d370fa53e5151629080e
-
+https://gyazo.com/b7b9b68465606e65a4ad96c8d2061072
+ 
 検索機能もついており、キーワードを打ち込めば検索できます。
-https://gyazo.com/a50ef1427f42f45f64980ab4e1e5c66e
+https://gyazo.com/45382760e52aa95e8d40daf889291cf4
 
 # 実装予定の機能
 画像を投稿して、それを見た他のユーザーがコメントを打てるだけの機能なので、
