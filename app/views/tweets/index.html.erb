@@ -13,7 +13,7 @@
             <%= tweet.user.nickname %>
           </a>
         </span>
-        <%#= audio_tag tweet.audio_url, :controls => true if tweet.audio? %>
+        <%= audio_tag tweet.audio_url, :controls => true if tweet.audio? %>
     </div>
   <% end %>
 </div>
