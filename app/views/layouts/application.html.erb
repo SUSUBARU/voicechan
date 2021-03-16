@@ -18,6 +18,7 @@
           <ul class="nav-lists">
               <% if user_signed_in? %>
                 <li><%= link_to "#{current_user.nickname}さん", "/users/#{current_user.id}", class: "post_name" %></li>
+                <li><%= link_to "ユーザー編集", edit_user_registration_path, class: "post" %></li>
                 <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "post" %></li>
                 <li><%= link_to "投稿する", new_tweet_path, class:"post" %></li>
               <% else %>
