@@ -24,13 +24,13 @@ header {
 
 .logo {
   height: 110%;
-  width: 40%;
+  width: auto;
   filter: grayscale(100%);
 }
 
 .logo:hover {
   height: 110%;
-  width: 40%;
+  width: auto;
   filter: grayscale(0);
 }
 
