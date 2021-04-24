@@ -108,24 +108,24 @@ WebブラウザGoogle Chromeの最新版を利用してアクセスしてくだ�
 # 実装した機能についてのGIFと説明
 
 ユーザーを登録すると音声と画像を投稿できるようになります。
-https://gyazo.com/04fd5b09e62d2d38151fa90b1341b1d4
+[![Image from Gyazo](https://i.gyazo.com/04fd5b09e62d2d38151fa90b1341b1d4.gif)](https://gyazo.com/04fd5b09e62d2d38151fa90b1341b1d4)
  
 自身が投稿した商品は、編集と削除をすることができます。
-https://gyazo.com/22daa7086566ae55ebb19fbfbe611069
-https://gyazo.com/ec124688d58ada6d84ade9c69f719e78
+[![Image from Gyazo](https://i.gyazo.com/22daa7086566ae55ebb19fbfbe611069.gif)](https://gyazo.com/22daa7086566ae55ebb19fbfbe611069)
+[![Image from Gyazo](https://i.gyazo.com/ec124688d58ada6d84ade9c69f719e78.gif)](https://gyazo.com/ec124688d58ada6d84ade9c69f719e78)
  
 他のユーザーが投稿した画像は、ログインしていなくても閲覧することができます。
-https://gyazo.com/d4f21ab7aa7727b093290ee7d5fa96e9
+[![Image from Gyazo](https://i.gyazo.com/d4f21ab7aa7727b093290ee7d5fa96e9.gif)](https://gyazo.com/d4f21ab7aa7727b093290ee7d5fa96e9)
  
 詳細ページにアクセスすれば、ログインしているユーザーがコメントを送信することができます。
-https://gyazo.com/b7b9b68465606e65a4ad96c8d2061072
+[![Image from Gyazo](https://i.gyazo.com/b7b9b68465606e65a4ad96c8d2061072.gif)](https://gyazo.com/b7b9b68465606e65a4ad96c8d2061072)
  
 検索機能もついており、キーワードを打ち込めば検索できます。
-https://gyazo.com/45382760e52aa95e8d40daf889291cf4
+[![Image from Gyazo](https://i.gyazo.com/45382760e52aa95e8d40daf889291cf4.gif)](https://gyazo.com/45382760e52aa95e8d40daf889291cf4)
 
 ユーザー情報の編集(削除含む)ができます。
-https://gyazo.com/7f2dae7cb507fcb27092ccf94599cbe5
-https://gyazo.com/3449d75856bb6980a3b283eda96fb6e9
+[![Image from Gyazo](https://i.gyazo.com/7f2dae7cb507fcb27092ccf94599cbe5.gif)](https://gyazo.com/7f2dae7cb507fcb27092ccf94599cbe5)
+[![Image from Gyazo](https://i.gyazo.com/3449d75856bb6980a3b283eda96fb6e9.gif)](https://gyazo.com/3449d75856bb6980a3b283eda96fb6e9)
 
 # 実装予定の機能
 画像を投稿して、それを見た他のユーザーがコメントを打てるだけの機能なので、
@@ -134,7 +134,7 @@ https://gyazo.com/3449d75856bb6980a3b283eda96fb6e9
 
 # データベース設計
 ER図URL
-https://gyazo.com/c012da693b13ccc921f775912114c948
+[![Image from Gyazo](https://i.gyazo.com/c012da693b13ccc921f775912114c948.png)](https://gyazo.com/c012da693b13ccc921f775912114c948)
 
 # ローカルでの動作方法
 Rubyバージョン
